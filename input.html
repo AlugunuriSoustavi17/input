@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <title>my website</title>
+    </head>
+    <body>
+        <h1 id="myh1">welcome</h1>
+        <label>username:</label>
+        <input id="mytext" type="text">
+        <button id="mySubmit">Submit</button>
+       
+    </body>
+    <style>
+button{
+background-color: rgb(0, 255, 170);
+border: 5px;
+border-radius: 2px;
+}
+input{
+
+    color: brown;     
+}
+
+
+
+    </style>
+    <script>
+        let username;
+        document.getElementById("mySubmit").onclick=function() {
+
+        
+            username= document.getElementById("mytext").value;
+            console.log(username);
+            document.getElementById("myh1").textContent = `hello ${username}`;
+        }
+    </script>
+</html>
+
+
+
